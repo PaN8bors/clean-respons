@@ -1,10 +1,9 @@
 import input from 'input';
 
 function clean(resp) {
-    const yourResp = ['yes','yup','affirmative','definately','yeppers','yea','y',''];
-    const respLC = resp.toLowerCase()
+    const yourResp = resp.toLowerCase();
 
-    if (yourResp.includes(respLC)) {
+    if (yourResp.includes('y')) {
         return true
     } else {
         return false
