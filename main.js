@@ -3,7 +3,7 @@ import input from 'input';
 function clean(resp) {
     const yourResp = ['yes','yup','affirmative','definately','yeppers','yea','y',''];
 
-    if (yourResp.includes(resp)) {
+    if (yourResp.includes(resp.toLowerCase())) {
         return true
     } else {
         return false
